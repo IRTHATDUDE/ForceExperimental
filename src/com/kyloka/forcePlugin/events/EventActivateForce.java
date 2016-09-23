@@ -21,6 +21,9 @@ public class EventActivateForce implements Listener {
     @EventHandler
     public void playerRightClick(PlayerInteractEvent e) {
         Player target = e.getPlayer();
+        for (Player all : Bukkit.getOnlinePlayers()){
+            if(all.hasPermission("force.push");
+        
 
         //target.sendMessage(e.getAction().toString() + " ");
         Chunk currentChunk = target.getLocation().getChunk();
@@ -64,6 +67,7 @@ public class EventActivateForce implements Listener {
             }
             }
         }
+    }
     }
 
     @EventHandler
